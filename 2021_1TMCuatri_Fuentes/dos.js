@@ -1,6 +1,7 @@
 
  function mostrar()
 {
+	var continuar
 	var nombre
 	var tipoCursada;
 	var cantidadMaterias;
@@ -134,8 +135,8 @@
 				nombreAlumnoMayorMateriasDeFormaRemota=nombre;
 			}
 		}
-
-	}
+		continuar=confirm("Desea continuar?")
+	}while(continuar)
 	//A 
 	document.write("El mejor promedio no masculino es: "+ mejorNota);
 	//B
@@ -144,7 +145,7 @@
 	promedioNotaMasculino=contadorNotaMasculino/acumuladorNotaFemenino;
 	promedioNotaFemenino=contadorNotafemenino/acumuladorNotaFemenino;
 	promedioNotaNovinario=contadorNotaNoVinario/acumuladorNotaNoVinario;
-	document.write("El promedio de nota masculino es: "+promedioNotaMasculino+" El promedio nota femenino es: "+promedioNotaFemenino+" El promedio nota de sexo no vinario es: "+promedioNotaNovinari);
+	document.write("El promedio de nota masculino es: "+promedioNotaMasculino+" El promedio nota femenino es: "+promedioNotaFemenino+" El promedio nota de sexo no vinario es: "+promedioNotaNovinario);
 	//F
 	document.write("El alumno que cursa mas materias de forma no remota tiende de nombre: "+nombreAlumnoMayorMateriasDeFormaRemota+" y tiene "+edadAlumnoMayorMateriasDeFormaRemota+" años de edad");
 }
